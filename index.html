@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container p-5 mt-5 d-flex align-items-center justify-content-center" id="questionsAnswers">
+        <div id="intro">
+            <h1 class="d-flex justify-content-center">Investigating the news</h1>
+            <div class="mt-5 pt-3">
+                <h3 class="col-md-12"> How good are you at deciding whether a newspaper headline is fact or fiction?
+                </h3>
+                <p class="pt-5"> You will be presented with 6 questions, each with 3 fake news headlines and 1 real news
+                    headline. Can you spot which headline is real and which one is fake?</p>
+                <div class="d-flex justify-content-center">
+                    <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                        onclick="nextQuestion('intro', 'q1')">Start
+                        the
+                        quiz!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="q1" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1><br>
+            <p>Select one answer from the below headlines - Think carefully....only one of these is true!</p>
+            <br>
+            <form name="q1">
+                <input type="radio" name="group1" id="a1" value=0 checked> "Slovak pensioner opens stuffed animal zoo"
+                <br><br>
+                <input type="radio" name="group1" id="a2" value=0> "Japanese fans say Godzilla is too fat!"
+                <br><br>
+                <input type="radio" name="group1" id="a3" value=1> "Worlds first hotdog ATM"
+                <br><br>
+                <!--correct answer-->
+                <input type="radio" name="group1" id="a4" value=0> "Woman gives birth to four stone baby"
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="nextQuestion('q1', 'q2')">Question 2
+                </button>
+            </div>
+        </div>
+
+        <div id="q2" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1><br>
+            <p>Thinking scientifically - Select one answer from the below headlines - remember only one answer is true!
+            </p><br>
+            <div class="d-flex justify-content-center">
+                <form name="q2">
+                    <input type="radio" name="group2" id="b1" value=1 checked> "Scientists create a plant that cannot
+                    die"<br><br>
+                    <!--correct answer-->
+                    <input type="radio" name="group2" id="b2" value=0> "Scientist to create a stem cell burger"
+                    <br><br>
+                    <input type="radio" name="group2" id="b3" value=0> "Scientists create water-activated self-folding
+                    straws"
+                    <br><br>
+                    <input type="radio" name="group2" id="b3" value=0> "Scientists are installing internet on the moon"
+                </form>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="nextQuestion('q2','q3')">Question 3
+                </button>
+            </div>
+        </div>
+
+        <div id="q3" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1><br>
+            <p class="d-flex justify-content-center">Trump's "fake news!"</p>
+            <br>
+            <form name="q3">
+                <input type="radio" name="group3" id="c1" value=0 checked> "Trump claimed climate change was a hoax
+                created by China"<br><br>
+                <!--correct answer-->
+                <input type="radio" name="group3" id="c2" value=0> "Trump campaign offered actors $50 to cheer for
+                presidential announcement"<br><br>
+                <input type="radio" name="group3" id="c3" value=1> "Trump twitter fight with former wrestler Hulk Hogan"
+                <br><br>
+                <input type="radio" name="group3" id="c4" value=0> "Trump buys bald eagle for oval office"
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="nextQuestion('q3','q4')">Question 4
+                </button>
+            </div>
+        </div>
+
+        <div id="q4" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1><br>
+            <p class="d-flex justify-content-center">Don't get washed away with the fake news headlines!</p><br>
+            <form name="q4">
+                <input type="radio" name="group4" id="d1" value=0 checked> "Flood of caramel unleashed by Brazilian
+                sugar fire"<br><br>
+                <input type="radio" name="group4" id="d2" value=0> "Sea monster washes ashore in NZ"
+                <br><br>
+                <input type="radio" name="group4" id="d3" value=1> "Weatherman trapped by avalanche mid-report"
+                <br><br>
+                <input type="radio" name="group4" id="d4" value=0> "Hundreds of frogs rain down in small Lancashire
+                village"
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="nextQuestion('q4','q5')">Question 5
+                </button>
+            </div>
+        </div>
+
+        <div id="q5" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1><br>
+            <p class="d-flex justify-content-center">Tell us the truth North Korea!</p><br>
+            <form name="q5">
+                <input type="radio" name="group5" id="e1" value=0 checked> "North Korean cats rounded up and sent
+                south"<br><br>
+                <input type="radio" name="group5" id="e2" value=0> "Kim Jong-un throws dance party to celebrate North
+                Korea missile launch"<br><br>
+                <input type="radio" name="group5" id="e3" value=1> "Australian imposters play official golf tournament
+                in North Korea"<br><br>
+                <input type="radio" name="group5" id="e4" value=0> "North Korea beat Brazil in the World Cup"
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="nextQuestion('q5','q6')">Question 5
+                </button>
+            </div>
+        </div>
+
+        <div id="q6" class="align-items-center">
+            <h1 class="d-flex justify-content-center">Spot the fake news headline</h1>
+            <p class="d-flex justify-content-center">Gudday, what ripper stories does Australia have for us?</p>
+            <form name="q6">
+                <input type="radio" name="group6" id="f1" value=0 checked> "Crocodile breaks loose on Qantas
+                flight"<br><br>
+                <input type="radio" name="group6" id="f2" value=1> "Wombat grounds flight in Sydney"<br><br>
+                <input type="radio" name="group6" id="f3" value=0> "Skippy causes plane crash"<br><br>
+                <input type="radio" name="group6" id="f4" value=0> "Skippy causes plane crash"
+            </form>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5"
+                    onclick="results()">Results!
+                </button>
+            </div>
+        </div>
+
+        <div id="result" class="align-items-center">
+            <p id="endResult">Your answer:</p>
+            <p id="endImg"></p>
+            <div class="d-flex justify-content-center">
+                <button id="btn1" type="button" class="btn btn-dark btn-rounded btn lg mt-5" onclick="startOver()">Try
+                    Again!
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

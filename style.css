@@ -1,0 +1,25 @@
+#q1, #q2, #q3, #q4, #q5, #q6, #result
+{
+    display: none;
+} 
+
+.container
+{
+    background: url(cream_dust.png);
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Ubuntu', sans-serif;
+}
+form {
+    text-align: left !important;
+    font-family: 'Arvo', serif;
+    font-size: 1.5em;
+    
+}
+
+
+body {
+    background-image:url(giphy.gif);
+    background-size: 100%;
+    
+}
